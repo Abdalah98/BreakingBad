@@ -6,31 +6,39 @@
 //
 
 import UIKit
-
+import IQKeyboardManagerSwift
+import SideMenu
+import Toast
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        IQKeyboardManager.shared.enable = true
+    //    setupSideMenu()
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
+//    func setupSideMenu() {
+//
+//        let menu = UISideMenuNavigationController(rootViewController:SideMenuVC.create() )
+//        menu.isNavigationBarHidden = true
+//        SideMenuManager.default.menuLeftNavigationController = menu
+//
+//        SideMenuManager.default.menuFadeStatusBar = false
+//        SideMenuManager.default.menuAllowPushOfSameClassTwice = false
+//        SideMenuManager.default.menuPresentMode = .menuSlideIn
+//        SideMenuManager.default.menuPushStyle = .default
+//        SideMenuManager.default.menuWidth = (window?.frame.width)! * 0.7
+//        SideMenuManager.default.menuDismissOnPush = true
+//        SideMenuManager.default.menuAnimationBackgroundColor = .black
+//        SideMenuManager.default.menuAnimationFadeStrength = 0.5
+//
+//
+//    }
+    
 
 }
 

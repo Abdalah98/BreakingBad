@@ -30,11 +30,11 @@
       },
       {
         "package": "SideMenu",
-        "repositoryURL": "https://github.com/kukushi/SideMenu",
+        "repositoryURL": "https://github.com/jonkykong/SideMenu",
         "state": {
           "branch": null,
-          "revision": "33932e6a42e259d5cf3dd98089090e447fdf780a",
-          "version": "2.0.7"
+          "revision": "8bd4fd128923cf5494fa726839af8afe12908ad9",
+          "version": "6.5.0"
         }
       },
       {
