@@ -1,7 +1,7 @@
-# BreakingBad
+# Breaking Bad
 I've Used the iOS Apps of breaking bad API 
 ### Features
-	•	 Use the BreakingBad API - No authentication needed  https://breakingbadapi.com/documentation
+	•	 Use the Breaking Bad API - No authentication needed  https://breakingbadapi.com/documentation
 	•	 Support Dark Mode & light mode 
 	•	 Searching through  by name character & death & number of episodes.
 	•	 Downloading & Caching Image
