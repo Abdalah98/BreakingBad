@@ -19,6 +19,9 @@ I've Used the iOS Apps of breaking bad API
 
 
 #### UI
+####Walkthrough
+![Screen Recording 2021-06-23 at 5 15 13 AM](https://user-images.githubusercontent.com/41602889/123030085-7beaff00-d3e2-11eb-8752-ea35620d879a.gif)
+
 #### Home Quotes
 ![Screen Recording 2021-06-23 at 4 29 34 AM](https://user-images.githubusercontent.com/41602889/123029462-72ad6280-d3e1-11eb-8a14-a279ff75bb9c.gif)
 
