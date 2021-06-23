@@ -12,7 +12,7 @@
         <!--Walkthrough Page View Controller-->
         <scene sceneID="r10-Y3-PFm">
             <objects>
-                <pageViewController storyboardIdentifier="WalkthroughPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="NAX-iL-9I9" customClass="WalkthroughPageViewController" customModule="Breaking_Bad" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="WalkthroughPageViewController" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="NAX-iL-9I9" customClass="WalkthroughPageViewController" customModule="Breaking_Bad" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pww-Yc-cP7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-535" y="-56"/>
@@ -20,7 +20,7 @@
         <!--Walkthrough View Controller-->
         <scene sceneID="VhW-7x-ZGG">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughViewController" id="3Oa-tJ-3Kr" customClass="WalkthroughViewController" customModule="Breaking_Bad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalkthroughViewController" modalPresentationStyle="fullScreen" id="3Oa-tJ-3Kr" customClass="WalkthroughViewController" customModule="Breaking_Bad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kc6-Vt-vPx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,27 +34,35 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ng4-YO-MNV">
                                 <rect key="frame" x="0.0" y="623.5" width="414" height="272.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hv2-Td-yqL">
-                                        <rect key="frame" x="137" y="57.5" width="140" height="157.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hv2-Td-yqL">
+                                        <rect key="frame" x="136.5" y="57.5" width="141" height="157.5"/>
                                         <subviews>
-                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="vKI-ZX-RV8">
-                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="27.5"/>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="vKI-ZX-RV8">
+                                                <rect key="frame" x="0.0" y="0.0" width="141" height="27.5"/>
                                                 <color key="pageIndicatorTintColor" name="Color"/>
                                             </pageControl>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atX-z9-oMU">
-                                                <rect key="frame" x="0.0" y="42.5" width="140" height="50"/>
+                                                <rect key="frame" x="0.5" y="42.5" width="140" height="50"/>
                                                 <color key="backgroundColor" name="Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Qgm-zt-1qs"/>
-                                                    <constraint firstAttribute="width" constant="140" id="ZzK-mN-lhA"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="ZzK-mN-lhA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nextButtonTappedWithSender:" destination="3Oa-tJ-3Kr" eventType="touchUpInside" id="DJz-ma-Fce"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNs-hH-irs">
-                                                <rect key="frame" x="0.0" y="107.5" width="140" height="50"/>
+                                                <rect key="frame" x="0.5" y="107.5" width="140" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="40W-zX-on6"/>
                                                     <constraint firstAttribute="height" constant="50" id="PVr-fO-l0j"/>
@@ -71,6 +79,9 @@
                                                         <color key="value" name="Color"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="skipButtonTappedWithSender:" destination="3Oa-tJ-3Kr" eventType="touchUpInside" id="xYs-du-aQZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -108,7 +119,7 @@
         <!--Walkthrough Content View Controller-->
         <scene sceneID="rAL-7Z-a5g">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughContentViewController" id="MAY-QB-4Id" customClass="WalkthroughContentViewController" customModule="Breaking_Bad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalkthroughContentViewController" modalPresentationStyle="fullScreen" id="MAY-QB-4Id" customClass="WalkthroughContentViewController" customModule="Breaking_Bad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DRw-7g-Qkc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

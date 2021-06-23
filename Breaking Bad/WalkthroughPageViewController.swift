@@ -6,16 +6,18 @@
 //
 
 import UIKit
-
-class WalkthroughPageViewController: UIPageViewController,UIPageViewControllerDataSource {
-
-    var pageImages = ["image2", "image1", "iamge3"]
+protocol WalkthroughPageViewControllerDelegate: class {
+    func didUpdatePageIndex(currentIndex: Int)
+}
+class WalkthroughPageViewController: UIPageViewController,UIPageViewControllerDataSource,UIPageViewControllerDelegate {
+    weak var walkthroughDelegate: WalkthroughPageViewControllerDelegate?
+    var pageImages = ["iamge0","image2", "image1", "iamge3"]
     var currentIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+       delegate = self
             dataSource = self
 
             // Create the first walkthrough screen
@@ -55,5 +57,22 @@ class WalkthroughPageViewController: UIPageViewController,UIPageViewControllerDa
 
         return nil
     }
+    func forwardPage() {
+        currentIndex += 1
+        if let nextViewController = contentViewController(at: currentIndex) {
+            setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+        }
+    }
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
 
+        if completed {
+            if let contentViewController = pageViewController.viewControllers?.first as? WalkthroughContentViewController {
+
+                currentIndex = contentViewController.index
+
+                walkthroughDelegate?.didUpdatePageIndex(currentIndex: contentViewController.index)
+            }
+
+        }
+    }
 }
