@@ -36,4 +36,7 @@ I've Used the iOS Apps of breaking bad API
 
 #### All episodes & Search episodes
 
+https://user-images.githubusercontent.com/41602889/123034519-f53a2000-d3e9-11eb-99eb-cc9bc7f28d31.mp4
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/41602889/123034662-36323480-d3ea-11eb-80c6-ccd28b8acef6.gif)
 
