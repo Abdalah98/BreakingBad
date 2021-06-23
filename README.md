@@ -28,6 +28,8 @@ I've Used the iOS Apps of breaking bad API
 
 
 #### All character & Search character
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/41602889/123033679-6f69a500-d3e8-11eb-8d33-13d2429ad5c0.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/41602889/123034084-2f56f200-d3e9-11eb-8ebd-33881aa8e73d.gif)
 
 #### All death & Search death
 ![Screen Recording 2021-06-23 at 4 25 58 AM](https://user-images.githubusercontent.com/41602889/123029361-45f94b00-d3e1-11eb-836f-cc7d0659d98e.gif)
