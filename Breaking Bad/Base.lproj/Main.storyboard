@@ -123,9 +123,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="805cf7f65fed4a799a35dcc405b15530" translatesAutoresizingMaskIntoConstraints="NO" id="Xb5-zy-244">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="805cf7f65fed4a799a35dcc405b15530" translatesAutoresizingMaskIntoConstraints="NO" id="Xb5-zy-244">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ev-7S-jcZ">
                                 <rect key="frame" x="77.5" y="537" width="220" height="48"/>
@@ -155,7 +154,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Xb5-zy-244" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DCY-6c-v8f"/>
+                            <constraint firstItem="Xb5-zy-244" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vx8-ks-HtU"/>
+                            <constraint firstItem="Xb5-zy-244" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="csF-Va-9ae"/>
                             <constraint firstItem="5ev-7S-jcZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="okM-Xa-SFb"/>
+                            <constraint firstItem="Xb5-zy-244" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tCe-hu-Vax"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5ev-7S-jcZ" secondAttribute="bottom" constant="82" id="zmh-tG-pCO"/>
                         </constraints>
                     </view>
